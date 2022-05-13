@@ -12,6 +12,15 @@ public class Equation {
     private Integer id;
 
     private String result;
+    private Double a;
+    private Double b;
+    private Double c;
+
+    public Equation (Double a, Double b, Double c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
 
     public String calculateRootsOfEquation(Double a, Double b, Double c) {
         Double d = Math.pow(b, 2) - 4 * a * c;
